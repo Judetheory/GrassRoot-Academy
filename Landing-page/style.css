@@ -14,20 +14,22 @@
 display: flex;
 align-items: center;}
 
-.logo {width: 70px;
+.logo {width: 100px;
 cursor: pointer;
 margin-left: 45px;
 padding: 20px;
 }
 
-.menu-icon {width: 30px;
+.menu-icon {width: 45px;
 cursor: pointer;
 padding: 10px;
 margin-left: 30px;}
 
+.image-card {display: flex;}
+
 nav {flex: 1; text-align: right;}
 
-nav ul li {display: inline; margin-left: 50px;}
+nav ul li {display: inline; margin-left: 50px; }
 na ul li a {font-size: 13px;
 text-decoration: solid;
 text-decoration-color: beige;}
@@ -57,7 +59,35 @@ margin-bottom: 20px;
 
 .second {display: flex; justify-content: center;}
 
-.card { background-color: aliceblue; width: 270px; height: 400px;
+.card { background-color: aliceblue; width: 270px; height: 450px;
 margin: 10px;}
 
 .im {width:270px; height: 250px; padding: 0%;}
+
+.users {width: 100%; padding-left: 40%; margin-top: 20px; margin-bottom: 20px;}
+
+.testimony {padding: 5px;}
+
+h4 {font-size: small; font-style: italic; color:midnightblue; padding: 10px 5px;}
+
+section {display: flex;}
+
+.third {background-color:dimgray;}
+
+.third #quote {display: flex; text-align: left; padding: 100px; flex-direction: column;}
+
+.forth {background-color: aqua;}
+
+.contact {margin: 50px; background-color: whitesmoke; width: 90%; height: 90px; border-radius: 10px; display: flex; text-align: left; 
+    flex: 1; align-items: center; padding-left: 150px}
+
+.contact button {height: 40px; width: 200px; margin: 140px; border-left: 50px;}
+
+
+.sign-in {padding-left: 250px;}
+
+.forth .contact .slay {font-size: xx-small;}
+
+.fifth {background-color:dimgray;}
+
+.fifth footer #copyright {display: flex; justify-content: center; text-align: left; padding: 10px; margin-left: 50px;}
