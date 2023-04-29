@@ -58,7 +58,8 @@ font-weight: bold;}
 
 .choices {display: flex;
 text-align: center;
-justify-content: center;}
+justify-content: center;
+}
 
 .choice {text-align: center;
      padding: 20px;
@@ -67,17 +68,30 @@ justify-content: center;}
 #papi {width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
     }
 
 #rocki {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
 }
 
 #sci {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
     
 }
+
+.choice:hover {background-color: rgb(17, 46, 46);}
+
+#command_word { text-align: center;
+color: bisque;
+font-size: 22px; 
+font-weight: bold;}
