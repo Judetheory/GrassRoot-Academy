@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: darkslategray;
+}
 header {
     display: flex;
     background-color: aquamarine;
     padding: 10px;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     
 }
 
@@ -20,4 +24,29 @@ header > img {
     height: 100px;
     border-radius: 50%;
     
+}
+
+.score_board {
+    border: 3px solid white;
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.players {
+    background-color: rgb(1, 1, 10);
+}
+
+#human {position: absolute;
+top: auto;
+left: -32px;}
+
+#computer {
+    position: absolute;
+    top: auto;
+    right: -35px;
 }
