@@ -14,14 +14,17 @@ function GetComputerChoices() {
     return choices[randomNumber]; 
 }
 
-function win(humanC, ComputerC) {
+function win(human, computer) {
     humanScore++;
     humanScore_span.innerHTML = humanScore;
-    computerScore.innerHTML = computerScore;
-    result_p.innerHTML = humanC+ "  " + "beats" + "  " + ComputerC +".👏👏👏"
+    result_p.innerHTML = human+ "         " + "beats" + "      " + computer +".👏👏👏"
 }
 
-function lose() {
+function lose(computer, human) {
+    computerScore++;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = computer + "    " + "beats" + "    " + human  +".🤦🤦🤦"
+
 
 }
 
@@ -39,7 +42,7 @@ function game(humanChoice) {
         case "scissorsrock":
         case "rockpaper":
         case "paperscissors":
-            lose();
+            lose(ComputerChoice, humanChoice);
             break;
         case "rockrock":
         case "paperpaper":
