@@ -12,18 +12,39 @@ function GetComputerChoices() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber]; 
-
 }
 
-console.log(GetComputerChoices());
+function game(humanChoice) {
+    const ComputerChoice = GetComputerChoices();
+    switch (humanChoice + ComputerChoice) {
+        case "rockscissors":
+        case "paperrock":
+        case "scissorspaper":
+            console.log("Win!!!");
+            break;
+        case "scissorsrock":
+        case "rockpaper":
+        case "paperscissors":
+            console.log("Lose!!!");
+            break;
+        case "rockrock":
+        case "paperpaper":
+        case "scissorsscissors":
+            console.log("Draw!!");
+            break;
+    }
+}
 
-rock_div.addEventListener("click", function()
-{console.log("Hey! you clicked rock")})
+function main() {
+    rock_div.addEventListener('click', function() {
+        game("rock");
+    })
+    paper_div.addEventListener('click', function() {
+        game("paper");
+    })
+    scissors_div.addEventListener('click', function() {
+        game("scissors");
+    })
+}
 
-paper_div.addEventListener("click", function(){
-    console.log("Hey! you clicked Paper")
-})
-
-scissors_div.addEventListener("click", function(){
-   console.log("Hey! you clicked Paper") 
-})
+main();
