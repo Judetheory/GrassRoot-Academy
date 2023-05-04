@@ -17,18 +17,19 @@ function GetComputerChoices() {
 function win(human, computer) {
     humanScore++;
     humanScore_span.innerHTML = humanScore;
-    result_p.innerHTML = human+ "         " + "beats" + "      " + computer +".👏👏👏"
+    result_p.innerHTML = `${human} beats ${computer} 👏👏👏 You win!!!`
 }
 
 function lose(computer, human) {
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = computer + "    " + "beats" + "    " + human  +".🤦🤦🤦"
+    result_p.innerHTML = `${computer} beats ${human} 🤦🤦🤦You lost!!!`
 
 
 }
 
-function draw() {
+function draw(human, computer) {
+    result_p.innerHTML = `${human} equals ${computer}. A draw!!! Think of Changing your strategy`
 
 }
 function game(humanChoice) {
@@ -47,7 +48,7 @@ function game(humanChoice) {
         case "rockrock":
         case "paperpaper":
         case "scissorsscissors":
-            draw();
+            draw(ComputerChoice, humanChoice);
             break;
     }
 }
